@@ -25,9 +25,15 @@ plot(dateTime, power, xlab = "", ylab = "Global Active Power", type = "l")
 plot(dateTime, submeter1, xlab = "", ylab = "Energy sub metering", type = "l")
 points(dateTime, submeter2, col = "red", xlab = "", ylab = "Energy sub metering", type = "l")
 points(dateTime, submeter3, col = "blue", xlab = "", type = "l")
+<<<<<<< HEAD
 legend("topright", legend = c("Sub_metering_1","Sub_metering_2", "Sub_metering_3"), lty = 1, col = c("black","red","blue"), cex = .8, bty ="n")
 plot(dateTime, voltage, xlab = "datetime", ylab = "Voltage", type = "l")
 plot(dateTime, repower, xlab = "datetime", ylab = "Global_reactive_power", type = "l")
+=======
+legend("topright", legend = c("Sub_metering_1","Sub_metering_2", "Sub_metering_3"), lty = 1, col = c("black","red","blue"), cex = .7, bty ="n")
+plot(dateTime, voltage, xlab = "", ylab = "Voltage", type = "l")
+plot(dateTime, repower, xlab = "", ylab = "Global Reactive Power", type = "l")
+>>>>>>> a305e731695c38f1085e7307a525a18b2ce236bd
 
 #closing graphics device
 dev.off()
